@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Rubik:400,500,700);
+
+
+:root {
+  --font-family-root: 'Boing', 'Arial', sans-serif;
+  --font-family-root: 'Rubik', 'Arial', sans-serif;
+  --font-size-root: 16px; /* Ajuste conforme necessário */
+}
+
+body {
+  font-family: var(--font-family-root);
+  font-size: var(--font-size-root);
+}
+
+@font-face {
+  font-family: 'Boing-400';
+  src: url('../font/Boing-400.woff2') format('woff2'),
+  url('../font/Boing-400.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boing-500';
+  src: url('../font/Boing-500.woff2') format('woff2'),
+  url('../font/Boing-500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Boing";
+  font-weight: 400;
+  src: url("/webcms/static/fonts/boing-400.woff2") format("woff2"),url("/webcms/static/fonts/boing-400.woff") format("woff")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Boing";
+  font-weight: 500;
+  src: url("/webcms/static/fonts/boing-500.woff2") format("woff2"),url("/webcms/static/fonts/boing-500.woff") format("woff")
+}
