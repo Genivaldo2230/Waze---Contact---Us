@@ -154,8 +154,9 @@ main h1 {
     align-content: center;
     justify-content: center;
 }
-.contact-card-two{
-   
+
+.contact-card-two {
+
     display: flex;
     flex-direction: row;
     /* width: max-content; */
@@ -166,7 +167,8 @@ main h1 {
     align-content: center;
     justify-content: center;
 }
-    .card-blue{
+
+.card-blue {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -207,7 +209,7 @@ main h1 {
     border: 2px solid;
 }
 
-.card-green{
+.card-green {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -248,11 +250,12 @@ main h1 {
     border: 2px solid;
 }
 
-.card-roxo img{
+.card-roxo img {
     width: 90px;
     height: 90px;
 }
-.card-roxo{
+
+.card-roxo {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -395,5 +398,3 @@ footer {
 .footer-bottom ul li a:hover {
     text-decoration: underline;
 }
-
-  
