@@ -55,6 +55,11 @@ nav ul li a {
     background-color: #f0f0f0;
     border-radius: 25px;
 }
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
 
 main p a {
     animation-delay: 0.3s;
@@ -62,16 +67,32 @@ main p a {
 }
 
 main h1 {
-    text-align: center;
-    width: 92%;
+   
+        text-align: center;
+        width: 92%;
+        padding: 30px 57px;
+        background-color: #dbdbdb;
+        /* margin: 40px 71px 1px; */
+        border-radius: 15px;
+        /* animation-delay: 0.3s; */
+        animation-delay: 0.6s;
+    }
+
+
+    /* text-align: center; */
+    /* width: 92%;
     padding: 60px 80px;
     background-color: #f2f4f7;
     margin: 40px 71px 1px;
     border-radius: 15px;
-    animation-delay: 0.3s;
+    /* animation-delay: 0.3s; 
     animation-delay: 0.6s;
-}
+} */
 
+.h1{
+    font-size: 40px;
+    text-align: center;
+}
 .card-yellow {
     border-radius: 20px;
     display: flex;
@@ -79,16 +100,24 @@ main h1 {
     padding: 80px 60px;
     width: 45%;
     text-align: left;
-    font-size: 32px;
+    font-size: 18px;
     margin: 20px;
+    /* border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 60px;
+    width: 45%;
+    text-align: left;
+    font-size: 32px;
+    margin: 20px; */
     background-color: #fce354;
 }
 
 .card-yellow h2 {
-
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     padding: 10px;
+    text-align: left;
 }
 
 .card-yellow p {
@@ -119,8 +148,16 @@ main h1 {
     padding: 80px 60px;
     width: 45%;
     text-align: left;
-    font-size: 32px;
+    font-size: 18px;
     margin: 20px;
+    /* border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 60px;
+    width: 45%;
+    text-align: left;
+    font-size: 32px;
+    margin: 20px; */
     background-color: #ff8f00;
 }
 
@@ -150,8 +187,19 @@ main h1 {
     color: rgb(20, 1, 1);
     border: 2px solid;
 }
-
 .contact-car-one {
+    gap: 2%;
+    display: flex;
+    width: 100%;
+    padding: 4%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    /* justify-items: center; */
+    /* max-width: 90%; */
+    /* align-items: center; */
+}
+/* .contact-car-one {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -160,7 +208,7 @@ main h1 {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-}
+} */
 
 .contact-card-two {
 
@@ -277,6 +325,7 @@ main h1 {
 .card-green .animate-up {
     animation: slideUp 1s ease-out;
     animation-fill-mode: both;
+    font-size: 30px;
     /* Para manter o estado final após a animação */
 }
 
@@ -445,3 +494,4 @@ footer {
 .footer-bottom ul li a:hover {
     text-decoration: underline;
 }
+

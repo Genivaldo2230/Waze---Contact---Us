@@ -1,0 +1,103 @@
+/* Estilos básicos para os cards */
+.card-yellow, .card-orange, .card-blue, .card-green, .card-roxo {
+    /* background-color: #f0f0f0; */
+    padding: 80px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Estilo para as imagens dentro dos cards */
+.card-yellow img, .card-orange img, .card-blue img, .card-green img, .card-roxo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para os textos */
+.card-yellow h2, .card-orange h2, .card-blue h2, .card-green h2, .card-roxo h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.card-yellow p, .card-orange p, .card-blue p, .card-green p, .card-roxo p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Estilo para os links */
+.card-yellow a, .card-orange a, .card-blue a, .card-green a, .card-roxo a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.card-yellow a:hover, .card-orange a:hover, .card-blue a:hover, .card-green a:hover, .card-roxo a:hover {
+    background-color: #0056b3;
+}
+
+/* Layout responsivo */
+@media (min-width: 354px) and (max-width: 899px){
+    .card-container {
+        display: block;
+    }
+}
+
+@media (min-width: 354px) and (max-width: 899px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card-yellow, .card-orange, .card-blue, .card-green, .card-roxo {
+        flex: 1 1 calc(50% - 20px);
+    }
+    main h1{
+       
+        text-align: center;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .card-yellow, .card-orange, .card-blue, .card-green, .card-roxo {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card-yellow, .card-orange, .card-blue, .card-green, .card-roxo {
+        flex: 1 1 calc(25% - 20px);
+    }
+}
+
+/* Estilo para o título principal em diferentes tamanhos de tela */
+main h1 {
+    text-align: left;
+    border: 3px solid yellow;
+}
+
+@media (min-width: 375px) and (max-width:800px) {
+    main h1 {
+        text-align: left;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
