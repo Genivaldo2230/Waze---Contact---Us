@@ -56,10 +56,11 @@ nav ul li a {
     border-radius: 25px;
 }
 
-main p a{
+main p a {
     animation-delay: 0.3s;
     animation-delay: 0.6s;
 }
+
 main h1 {
     text-align: center;
     width: 92%;
@@ -255,8 +256,10 @@ main h1 {
     /* Cor do texto ao passar o mouse */
     border: 2px solid;
 }
+
 .card-green {
-    overflow: hidden; /* Garantir que os elementos não fiquem visíveis fora do container */
+    overflow: hidden;
+    /* Garantir que os elementos não fiquem visíveis fora do container */
 }
 
 @keyframes slideUp {
@@ -264,6 +267,7 @@ main h1 {
         transform: translateY(100%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -272,7 +276,8 @@ main h1 {
 
 .card-green .animate-up {
     animation: slideUp 1s ease-out;
-    animation-fill-mode: both; /* Para manter o estado final após a animação */
+    animation-fill-mode: both;
+    /* Para manter o estado final após a animação */
 }
 
 .card-green img.animate-up {
@@ -290,6 +295,7 @@ main h1 {
 .card-green a.animate-up {
     animation-delay: 0.9s;
 }
+
 .card-roxo img {
     width: 90px;
     height: 90px;
@@ -341,46 +347,6 @@ main h1 {
     border: 2px solid;
     animation-delay: 0.6s;
 }
-
-.card-roxo {
-    overflow: hidden; /* Garantir que os elementos não fiquem visíveis fora do container */
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.card-roxo .animate-up {
-    animation: slideUp 1s ease-out;
-    animation-fill-mode: both; /* Para manter o estado final após a animação */
-}
-
-.card-roxo img.animate-up {
-    animation-delay: 0.0s;
-}
-
-.card-roxo h2.animate-up {
-    animation-delay: 0.3s;
-}
-
-.card-roxo p.animate-up {
-    animation-delay: 0.6s;
-}
-
-.card-roxo a.animate-up {
-    animation-delay: 0.9s;
-}
-
-
-
-
 
 footer {
     background-color: #fff;
