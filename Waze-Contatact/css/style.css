@@ -60,7 +60,7 @@ main h1 {
     text-align: center;
     width: 92%;
     padding: 60px 80px;
-    background-color: #ebe2e2;
+    background-color: #f2f4f7;
     margin: 40px 71px 1px;
     border-radius: 15px;
 }
@@ -102,7 +102,6 @@ main h1 {
 
 .card-yellow a:hover {
     color: rgb(20, 1, 1);
-    /* Cor do texto ao passar o mouse */
     border: 2px solid;
 }
 
@@ -142,38 +141,21 @@ main h1 {
 
 .card-orange a:hover {
     color: rgb(20, 1, 1);
-    /* Cor do texto ao passar o mouse */
     border: 2px solid;
 }
 
 .contact-car-one {
     display: flex;
     flex-direction: row;
-    /* width: max-content; */
     width: 100%;
     justify-items: center;
     align-items: center;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    border: 3px solid red;
 }
-
-/* #contact-car-two {
-    gap: 44px;
-    border: 4px solid;
-    padding: 8px;
-    margin-bottom: 32px;
-    display: flex;
-    flex-direction: row;
-    width: max-content;
-    width: 100%;
-    justify-items: center;
-    align-items: center;
-    flex-wrap: wrap;
-} */
 .contact-card-two{
-    border: 3px solid rgb(36, 36, 18);
+   
     display: flex;
     flex-direction: row;
     /* width: max-content; */
@@ -183,9 +165,8 @@ main h1 {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    border: 3px solid red;
 }
-.card-blue{
+    .card-blue{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
