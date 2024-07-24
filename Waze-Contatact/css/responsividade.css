@@ -38,12 +38,13 @@
 .card-yellow a:hover, .card-orange a:hover, .card-blue a:hover, .card-green a:hover, .card-roxo a:hover {
     background-color: #0056b3;
 }
-
+/* 
 /* Layout responsivo */
 @media (min-width: 354px) and (max-width: 899px){
     .card-container {
         display: block;
     }
+    
 }
 
 @media (min-width: 354px) and (max-width: 899px) {
@@ -60,44 +61,85 @@
        
         text-align: center;
     }
-}
-
-@media (min-width: 900px) and (max-width: 1199px) {
+    .card-roxo > a.button.button-primary.animate-up {
+        font-size: 21px;
+        font-weight: 500;
+        width: 30%;
+    }
+} */
+/* 
+@media (min-width: 900px) and (max-width: 1832px) {
     .card-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 50%;
     }
-
+    
     .card-yellow, .card-orange, .card-blue, .card-green, .card-roxo {
         flex: 1 1 calc(33.333% - 20px);
     }
-}
-
+} */
+/* 
 @media (min-width: 1200px) {
     .card-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
+    
     .card-yellow, .card-orange, .card-blue, .card-green, .card-roxo {
         flex: 1 1 calc(25% - 20px);
     }
-}
-
+} */
+/* 
 /* Estilo para o título principal em diferentes tamanhos de tela */
 main h1 {
     text-align: left;
     border: 3px solid yellow;
-}
+} */
 
-@media (min-width: 375px) and (max-width:800px) {
+/* @media (min-width: 375px) and (max-width:800px) {
     main h1 {
         text-align: left;
     }
     h1{
         font-size: 2em;
+    }
+} */
+/* Layout responsivo */
+@media (min-width: 354px) and (max-width: 899px){
+    .card-container {
+        display: block;
+    
+    /* a.button.button-primary.animate-up {
+        font-size: 21px;
+        font-weight: 500;
+    } */
+}
+
+@media (min-width: 354px) and (max-width: 899px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    a.button.button-primary.animate-up {
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    .card-yellow, .card-orange, .card-blue, .card-green, .card-roxo {
+        flex: 1 1 calc(50% - 20px);
+        padding: 80px 60px;
+    }
+    main h1{
+       
+        text-align: center;
+    }
+    a.button.button-primary.animate-up {
+        font-size: 21px;
+        font-weight: 300;
+        max-width: 30px;
     }
 }

@@ -55,10 +55,12 @@ nav ul li a {
     background-color: #f0f0f0;
     border-radius: 25px;
 }
-main{
-    display: flex;
+main {
+    display: grid;
     justify-content: center;
-    flex-wrap: wrap
+    align-content: center;
+    padding-left: 230px;
+    padding-right: 230px;
 }
 
 main p a {
@@ -67,31 +69,19 @@ main p a {
 }
 
 main h1 {
-   
-        text-align: center;
-        width: 92%;
-        padding: 30px 57px;
-        background-color: #dbdbdb;
-        /* margin: 40px 71px 1px; */
-        border-radius: 15px;
-        /* animation-delay: 0.3s; */
-        animation-delay: 0.6s;
-    }
-
-
-    /* text-align: center; */
-    /* width: 92%;
+    text-align: center;
+    width: 92%;
     padding: 60px 80px;
     background-color: #f2f4f7;
     margin: 40px 71px 1px;
     border-radius: 15px;
-    /* animation-delay: 0.3s; 
+    animation-delay: 0.3s;
     animation-delay: 0.6s;
-} */
-
-.h1{
-    font-size: 40px;
-    text-align: center;
+}
+a.button.button-primary.animate-up {
+    font-size: 1.3rem;
+    font-family: emoji;
+    font-weight: 500;
 }
 .card-yellow {
     border-radius: 20px;
@@ -100,24 +90,16 @@ main h1 {
     padding: 80px 60px;
     width: 45%;
     text-align: left;
-    font-size: 18px;
-    margin: 20px;
-    /* border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 80px 60px;
-    width: 45%;
-    text-align: left;
     font-size: 32px;
-    margin: 20px; */
+    margin: 20px;
     background-color: #fce354;
 }
 
 .card-yellow h2 {
-    font-size: 30px;
+
+    font-size: 40px;
     font-weight: 600;
     padding: 10px;
-    text-align: left;
 }
 
 .card-yellow p {
@@ -145,25 +127,17 @@ main h1 {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 80px 60px;
-    width: 45%;
-    text-align: left;
-    font-size: 18px;
-    margin: 20px;
-    /* border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 80px 60px;
+    padding: 85px 60px;
     width: 45%;
     text-align: left;
     font-size: 32px;
-    margin: 20px; */
+    margin: 20px;
     background-color: #ff8f00;
 }
 
 .card-orange h2 {
 
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     padding: 10px;
 }
@@ -187,19 +161,8 @@ main h1 {
     color: rgb(20, 1, 1);
     border: 2px solid;
 }
+
 .contact-car-one {
-    gap: 2%;
-    display: flex;
-    width: 100%;
-    padding: 4%;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    /* justify-items: center; */
-    /* max-width: 90%; */
-    /* align-items: center; */
-}
-/* .contact-car-one {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -208,7 +171,7 @@ main h1 {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-} */
+}
 
 .contact-card-two {
 
@@ -268,7 +231,7 @@ main h1 {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 80px 60px;
+    padding: 104px 60px;
     width: 45%;
     text-align: left;
     font-size: 32px;
@@ -276,12 +239,13 @@ main h1 {
     background-color: #1ee592;
 }
 
+/* 
 .card-green h2 {
-
-    font-size: 40px;
+    font-size: 31px;
+    text-align: center;
     font-weight: 600;
-    padding: 10px;
-}
+    padding: 0px;
+} */
 
 .card-green p {
     font-size: 20px;
@@ -325,7 +289,6 @@ main h1 {
 .card-green .animate-up {
     animation: slideUp 1s ease-out;
     animation-fill-mode: both;
-    font-size: 30px;
     /* Para manter o estado final após a animação */
 }
 
@@ -355,12 +318,15 @@ main h1 {
     display: flex;
     flex-direction: column;
     padding: 60px;
-    width: 93%;
+     width: 93%; 
+    justify-content: center;
+    align-content: last baseline;
     text-align: left;
     font-size: 32px;
     margin: 20px;
     background-color: #963eff;
 }
+
 
 
 .card-roxo h2 {
@@ -384,7 +350,8 @@ main h1 {
     padding: 10px;
     border-radius: 20px;
     overflow-wrap: break-word;
-    width: 27%;
+    width: 35%;
+    text-align: left;
     font-size: 20px;
     font-weight: 500;
     animation-delay: 0.6s;
@@ -495,3 +462,49 @@ footer {
     text-decoration: underline;
 }
 
+/* Layout responsivo */
+
+@media (min-width: 354px) and (max-width: 899px){
+    .card-container {
+        display: block;
+    }
+    a.button.button-primary.animate-up {
+        font-size: 21px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 354px) and (max-width: 899px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    a.button.button-primary.animate-up {
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    .card-yellow, .card-orange, .card-blue, .card-green, .card-roxo {
+        flex: 1 1 calc(50% - 20px);
+        padding: 80px 60px;
+    }
+    main{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    main h1{
+       
+        text-align: center;
+    }
+    a.button.button-primary.animate-up {
+        font-size: 17px;
+        font-weight: 300;
+        width: 16rem;
+    }
+    h1 {
+        color: #4a4a4a;
+        position: relative;
+        left: -53px;
+    }
+}
