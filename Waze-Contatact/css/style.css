@@ -507,4 +507,7 @@ footer {
         position: relative;
         left: -53px;
     }
+    .footer-section h3 + ul li {
+        display: none;
+    }
 }
