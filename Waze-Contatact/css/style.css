@@ -29,11 +29,7 @@ body {
 }
 
 /* menu de navegação1 */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 #menu {
     display: flex;
@@ -158,22 +154,32 @@ nav ul li a {
 } */
 
 .login button {
-    padding: 8px 16px;
+    padding: 5px 25px;
     border: 1px solid black;
     background: none;
     cursor: pointer;
     font-weight: 500;
     border-radius: 25px;
+    margin: 0px 13px 5px 26px;
 }
 
 .login button:hover {
     background-color: #f0f0f0;
     border-radius: 25px;
+    border: solid #963eff;
+    color: #963eff;
+    text-decoration: none;
 }
 a {
     color: rgb(20, 1, 1);
     font-weight: 500;
     text-decoration: underline;
+    text-decoration: none;
+    margin-left: 10px;
+}
+a:hover {
+    color: #963eff; 
+    text-decoration: none; 
 }
 
 main {
@@ -186,12 +192,12 @@ main p a {
     animation-delay: 0.6s;
 }
 main h1 {
-    text-align: center;
+    text-align: left;
     width: 100%;
     max-width: 92%;
-    padding: 50px;
+    padding: 46px;
     background-color: #f2f4f7;
-    margin: 10px 124px 10px;
+    margin: 19px 109px 19px;
     border-radius: 15px;
     animation-delay: 0.3s;
     animation-delay: 0.6s;
@@ -202,6 +208,12 @@ a.button.button-primary.animate-up {
     font-family: emoji;
     font-weight: 500;
     text-align: left;
+}
+img.mood-icon {
+    position: relative;
+    left: 72rem;
+    width: 15rem;
+    bottom: 50px;
 }
 
 .card-yellow {
@@ -586,12 +598,12 @@ footer {
 
 /* Layout responsivo */
 
-@media (min-width: 354px) and (max-width: 899px) {
+@media (min-width: 230px) and (max-width: 899px) {
     .card-container {
         display: block;
     }
 
-    @media (min-width: 354px) and (max-width: 899px) {
+    @media (min-width: 230px) and (max-width: 899px) {
         a.button.button-primary.animate-up {
             font-size: 21px;
             font-weight: 500;
@@ -605,7 +617,7 @@ footer {
     }
 }
 
-@media (min-width: 354px) and (max-width: 899px) {
+@media (min-width: 230px) and (max-width: 899px) {
     .card-roxo {
 
         border-radius: 20px;
@@ -619,8 +631,26 @@ footer {
     }
 }
 
-@media (min-width: 354px) and (max-width: 899px) {
+@media (min-width: 230px) and (max-width: 1242px) {
+    img.mood-icon {
+        width: 100vw;
+        position: relative;
+        left: 12rem;
+        width: 80%;
+        bottom: 50px;
+        max-width: 30%;
+    }
+    .wz-title-bar-mood.mood.mood-bottom-right {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+    }
+
     .card-container {
+        
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -686,9 +716,7 @@ h1 {
 }
 
 
-body {
-    font-family: Arial, sans-serif;
-}
+
 
 /* .footer-container {
     display: flex;
@@ -757,7 +785,4 @@ body {
         display: block;
         margin: 5px 0;
     }
-}
-
-
 }
