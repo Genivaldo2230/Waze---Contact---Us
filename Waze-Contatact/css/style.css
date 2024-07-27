@@ -602,6 +602,13 @@ footer {
     .card-container {
         display: block;
     }
+    .footer-section ul {
+    display: none;
+}
+
+.footer-section ul.visible {
+    display: block;
+}
 
     @media (min-width: 230px) and (max-width: 899px) {
         a.button.button-primary.animate-up {
@@ -680,6 +687,13 @@ footer {
         
         text-align: center;
     }
+    ul {
+        display: none;
+    }
+    ul.visible {
+        display: block;
+    }
+    
 }
 
 /* a.button.button-primary.animate-up {
@@ -704,27 +718,6 @@ h1 {
     font-size: 18px;
     padding: 10px;
 }
-
-
-
-.footer-section ul {
-    display: none;
-}
-
-.footer-section ul.visible {
-    display: block;
-}
-
-
-
-
-/* .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f1f1f1;
-} */
 .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -737,6 +730,7 @@ h1 {
 .footer-section {
     flex: 1 1 200px;
     margin: 10px;
+    
 }
 
 .footer-section h3 {
@@ -746,9 +740,9 @@ h1 {
     text-align: left;
 }
 
-.footer-section ul {
+/* .footer-section ul {
     display: none;
-}
+} */
 
 .footer-section ul.visible {
     display: block;
